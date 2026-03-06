@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="assets/logo-icon.png">
+    <title>Curzy Cloud — Server Hosting & Automation</title>
+    <meta name="description"
+        content="Curzy Cloud menyediakan layanan hosting game server berkualitas tinggi dengan server Singapore, Anti-DDoS, dan harga terjangkau.">
+    <meta name="keywords" content="hosting, game server, vps, pterodactyl, curzy cloud, server indonesia">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#" class="nav-logo">
+                <img src="assets/logo-wide.png" alt="Curzy Cloud" class="logo-img"
+                    style="border-radius: 8px; max-height: 45px;">
+            </a>
+            <div class="nav-links" id="navLinks">
+                <a href="#home" class="nav-link" data-i18n="nav_home">Home</a>
+                <a href="#hosting" class="nav-link" data-i18n="nav_hosting">Hosting</a>
+                <a href="#automation" class="nav-link" data-i18n="nav_automation">Automation</a>
+                <a href="#info" class="nav-link" data-i18n="nav_info">Info Server</a>
+                <a href="#footer" class="nav-link" data-i18n="nav_contact">Kontak</a>
+            </div>
+            <div class="nav-actions">
+                <button class="lang-toggle" id="langToggle" title="Switch Language">
+                    <span class="lang-flag" id="langFlag">🇮🇩</span>
+                    <span class="lang-code" id="langCode">ID</span>
+                </button>
+                <button class="cart-btn" id="cartBtn" aria-label="Shopping Cart">
+                    <i class="fas fa-shopping-cart"></i>
+                    <span class="cart-badge" id="cartBadge">0</span>
+                </button>
+                <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Menu">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+        <div class="hero-bg-particles" id="particles"></div>
+        <div class="hero-content">
+            <div class="hero-badge reveal">
+                <i class="fas fa-cloud"></i>
+                <span data-i18n="hero_badge">Server Hosting & Automation</span>
+            </div>
+            <h1 class="hero-title reveal">
+                <span class="gradient-text">Curzy Cloud</span>
+            </h1>
+            <p class="hero-subtitle reveal" data-i18n="hero_subtitle">Solusi hosting game server terbaik dengan performa
+                tinggi, harga terjangkau, dan dukungan 24/7.</p>
+            <div class="hero-buttons reveal">
+                <a href="#hosting" class="btn btn-primary">
+                    <i class="fas fa-server"></i>
+                    <span data-i18n="hero_btn_hosting">Lihat Pricelist</span>
+                </a>
+                <a href="#automation" class="btn btn-secondary">
+                    <i class="fas fa-robot"></i>
+                    <span data-i18n="hero_btn_automation">Automation</span>
+                </a>
+            </div>
+            <div class="hero-stats reveal">
+                <div class="stat-item">
+                    <span class="stat-number" data-count="99.9">0</span><span class="stat-suffix">%</span>
+                    <span class="stat-label" data-i18n="stat_uptime">Uptime</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="500">0</span><span class="stat-suffix">+</span>
+                    <span class="stat-label" data-i18n="stat_users">Pengguna</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number" data-count="24">0</span><span class="stat-suffix">/7</span>
+                    <span class="stat-label" data-i18n="stat_support">Support</span>
+                </div>
+            </div>
+        </div>
+        <div class="hero-scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-dot"></div>
+            </div>
+        </div>
+        </div>
+    </section>
+
+    <!-- ============ HOME / TENTANG KAMI ============ -->
+    <section class="section section-home" id="home">
+        <div class="container">
+            <div class="home-content-box">
+                <h2 class="section-title" data-i18n="home_title">Tentang Curzy Cloud</h2>
+                <p class="home-desc" data-i18n="home_desc">
+                    Curzy Cloud beroperasi sebagai penyedia layanan infrastruktur Cloud dan Game Server Hosting yang
+                    mengutamakan performa, stabilitas, dan pelayanan kepada pelanggan. Kami menyediakan berbagai layanan
+                    mulai dari server VPS, Game Hosting, hingga script Automation bot.
+                </p>
+                <div class="home-trust">
+                    <i class="fas fa-shield-check"
+                        style="color: var(--success); font-size: 1.5rem; margin-bottom: 10px;"></i>
+                    <h3 data-i18n="home_trust_title">Terpercaya Sejak Awal Beroperasi</h3>
+                    <p data-i18n="home_trust_desc">Telah melayani lebih dari <strong>150+ Transaksi</strong> yang
+                        berhasil dan terus berkembang setiap harinya.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ SERVER INFO ============ -->
+    <section class="section section-info" id="info">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="info_tag">Mengapa Kami?</span>
+                <h2 class="section-title" data-i18n="info_title">Keunggulan Server Kami</h2>
+            </div>
+            <div class="info-grid">
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-globe-asia"></i></div>
+                    <h3 data-i18n="info_sg_title">Server Singapore</h3>
+                    <p data-i18n="info_sg_desc">Lokasi server strategis di Singapore untuk latensi rendah ke Asia
+                        Tenggara.</p>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-signal"></i></div>
+                    <h3 data-i18n="info_ping_title">Ping Stable / Hijau</h3>
+                    <p data-i18n="info_ping_desc">Koneksi stabil dengan ping rendah, memastikan pengalaman gaming yang
+                        lancar.</p>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-shield-alt"></i></div>
+                    <h3 data-i18n="info_ddos_title">Anti DDoS</h3>
+                    <p data-i18n="info_ddos_desc">Perlindungan DDoS tingkat lanjut untuk menjaga server tetap online.
+                    </p>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-calendar-check"></i></div>
+                    <h3 data-i18n="info_active_title">Masa Aktif 25 Hari</h3>
+                    <p data-i18n="info_active_desc">Semua paket hosting memiliki masa aktif 25 hari yang bisa
+                        diperpanjang.</p>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-hand-holding-heart"></i></div>
+                    <h3 data-i18n="info_garansi_title">Garansi 7 Hari</h3>
+                    <p data-i18n="info_garansi_desc">Garansi penuh 7 hari. Tidak puas? Uang kembali!</p>
+                </div>
+                <div class="info-card reveal">
+                    <div class="info-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                    <h3 data-i18n="info_backup_title">Free Auto Backup</h3>
+                    <p data-i18n="info_backup_desc">Backup otomatis 24/7 ke Google Drive secara gratis untuk semua
+                        paket.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ HOSTING PRICELIST ============ -->
+    <section class="section section-hosting" id="hosting">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="hosting_tag">Pricelist</span>
+                <h2 class="section-title" data-i18n="hosting_title">Hosting Server</h2>
+                <p class="section-desc" data-i18n="hosting_desc">Pilih paket hosting yang sesuai dengan kebutuhan server
+                    kamu.</p>
+            </div>
+            <div class="pricing-grid" id="pricingGrid">
+                <!-- Cards injected by JS -->
+            </div>
+
+            <!-- Custom Port -->
+            <div class="custom-port-section">
+                <div class="custom-port-card">
+                    <div class="port-icon"><i class="fas fa-plug"></i></div>
+                    <div class="port-info">
+                        <h3>Custom Port</h3>
+                        <p data-i18n="port_desc">Tambahkan port custom untuk server kamu</p>
+                    </div>
+                    <div class="port-price">
+                        <span class="price-amount">IDR 5.000</span>
+                    </div>
+                    <button class="btn btn-primary btn-sm add-to-cart-btn" data-name="Custom Port" data-price="5000"
+                        data-type="addon">
+                        <i class="fas fa-cart-plus"></i>
+                        <span data-i18n="btn_add">Tambah</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ AUTOMATION ============ -->
+    <section class="section section-automation" id="automation">
+        <div class="container">
+            <div class="section-header reveal">
+                <span class="section-tag" data-i18n="auto_tag">Scripts</span>
+                <h2 class="section-title" data-i18n="auto_title">Automation</h2>
+                <p class="section-desc" data-i18n="auto_desc">Script otomatis untuk mempermudah pengelolaan server dan
+                    bot kamu.</p>
+            </div>
+            <div class="automation-grid">
+                <div class="automation-card reveal">
+                    <div class="auto-card-header">
+                        <div class="auto-icon"><i class="fab fa-whatsapp"></i></div>
+                        <span class="auto-badge" data-i18n="auto_badge_popular">Populer</span>
+                    </div>
+                    <h3 class="auto-title">Auto Absen Bot WA + Anti Deleted Chat</h3>
+                    <p class="auto-desc" data-i18n="auto1_desc">Bot WhatsApp otomatis dengan fitur absensi dan anti
+                        deleted chat. Tidak pernah kehilangan pesan penting lagi.</p>
+                    <ul class="auto-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto1_f1">Auto Absen Otomatis</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto1_f2">Anti Deleted Chat</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto1_f3">Setup Mudah</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto1_f4">Support 24/7</span></li>
+                    </ul>
+                    <div class="auto-price">
+                        <span class="price-currency">IDR</span>
+                        <span class="price-amount-lg">50.000</span>
+                    </div>
+                    <button class="btn btn-primary btn-block add-to-cart-btn" data-name="Skript Auto Absen Bot WA"
+                        data-price="50000" data-type="script">
+                        <i class="fas fa-cart-plus"></i>
+                        <span data-i18n="btn_add_cart">Tambah ke Keranjang</span>
+                    </button>
+                </div>
+
+                <div class="automation-card reveal">
+                    <div class="auto-card-header">
+                        <div class="auto-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+                        <span class="auto-badge auto-badge-new" data-i18n="auto_badge_new">Baru</span>
+                    </div>
+                    <h3 class="auto-title">Auto Backup VPS To Google Drive</h3>
+                    <p class="auto-desc" data-i18n="auto2_desc">Backup VPS otomatis ke Google Drive. Data aman, tidur
+                        nyenyak. Script yang berjalan 24/7.</p>
+                    <ul class="auto-features">
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto2_f1">Backup Otomatis 24/7</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto2_f2">Ke Google Drive</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto2_f3">Jadwal Fleksibel</span></li>
+                        <li><i class="fas fa-check"></i> <span data-i18n="auto2_f4">Notifikasi Status</span></li>
+                    </ul>
+                    <div class="auto-price">
+                        <span class="price-currency">IDR</span>
+                        <span class="price-amount-lg">25.000</span>
+                    </div>
+                    <button class="btn btn-primary btn-block add-to-cart-btn" data-name="Skript Auto Backup VPS"
+                        data-price="25000" data-type="script">
+                        <i class="fas fa-cart-plus"></i>
+                        <span data-i18n="btn_add_cart">Tambah ke Keranjang</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============ CART SIDEBAR ============ -->
+    <div class="cart-overlay" id="cartOverlay"></div>
+    <aside class="cart-sidebar" id="cartSidebar">
+        <div class="cart-header">
+            <h2><i class="fas fa-shopping-cart"></i> <span data-i18n="cart_title">Keranjang</span></h2>
+            <button class="cart-close" id="cartClose" aria-label="Close Cart">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+        <div class="cart-items" id="cartItems">
+            <div class="cart-empty" id="cartEmpty">
+                <i class="fas fa-shopping-basket"></i>
+                <p data-i18n="cart_empty">Keranjang kosong</p>
+            </div>
+        </div>
+        <div class="cart-footer" id="cartFooter" style="display:none;">
+            <div class="cart-total">
+                <span data-i18n="cart_total">Total</span>
+                <span class="cart-total-amount" id="cartTotalAmount">IDR 0</span>
+            </div>
+
+            <div class="payment-methods">
+                <h4 data-i18n="cart_payment">Metode Pembayaran</h4>
+                <div class="payment-options">
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="BCA">
+                        <div class="payment-label">
+                            <i class="fas fa-university"></i>
+                            <span>BCA</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="BANK JAGO">
+                        <div class="payment-label">
+                            <i class="fas fa-university"></i>
+                            <span>BANK JAGO</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="DANA">
+                        <div class="payment-label">
+                            <i class="fas fa-wallet"></i>
+                            <span>DANA</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="GOPAY">
+                        <div class="payment-label">
+                            <i class="fas fa-wallet"></i>
+                            <span>GOPAY</span>
+                        </div>
+                    </label>
+                    <label class="payment-option">
+                        <input type="radio" name="payment" value="QRIS" checked>
+                        <div class="payment-label">
+                            <i class="fas fa-qrcode"></i>
+                            <span>QRIS</span>
+                        </div>
+                    </label>
+                </div>
+            </div>
+
+            <button class="btn btn-primary btn-block btn-checkout" id="checkoutBtn">
+                <i class="fas fa-paper-plane"></i>
+                <span data-i18n="cart_pay">BAYAR</span>
+            </button>
+        </div>
+    </aside>
+
+    <!-- ============ FOOTER ============ -->
+    <footer class="footer" id="footer">
+        <div class="container">
+            <div class="footer-top">
+                <div class="footer-brand">
+                    <img src="assets/logo-wide.png" alt="Curzy Cloud" class="footer-logo">
+                    <p data-i18n="footer_desc">Solusi hosting game server dan automation terbaik di Indonesia.</p>
+                </div>
+                <div class="footer-socials">
+                    <h4 data-i18n="footer_social">Social Media</h4>
+                    <div class="social-links">
+                        <a href="https://www.instagram.com/curzycloud" target="_blank" class="social-link"
+                            aria-label="Instagram" title="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://www.tiktok.com/@curzyori" target="_blank" class="social-link"
+                            aria-label="TikTok" title="TikTok">
+                            <i class="fab fa-tiktok"></i>
+                        </a>
+                        <a href="https://www.youtube.com/@curzycloud" target="_blank" class="social-link"
+                            aria-label="YouTube" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://www.whatsapp.com/channel/0029Vb0n6QmFsn0df3zW6o3v" target="_blank"
+                            class="social-link" aria-label="WhatsApp Saluran" title="WhatsApp Saluran">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://chat.whatsapp.com/HkabGBQroar6EYevIwyrUI" target="_blank" class="social-link"
+                            aria-label="WhatsApp Komunitas" title="WhatsApp Komunitas">
+                            <i class="fas fa-users"></i>
+                        </a>
+                        <a href="https://discord.com/invite/kZwRM4wavm" target="_blank" class="social-link"
+                            aria-label="Discord" title="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://lynk.id/curzycloud" target="_blank" class="social-link" aria-label="Lynk"
+                            title="Lynk">
+                            <i class="fas fa-link"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024-2026 CURZY CLOUD. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ============ NOTIFICATION TOAST ============ -->
+    <div class="toast-container" id="toastContainer"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
