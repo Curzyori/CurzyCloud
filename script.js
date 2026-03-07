@@ -28,6 +28,10 @@ const TRANSLATIONS = {
         hero_subtitle: 'Solusi hosting game server terbaik dengan performa tinggi, harga terjangkau, dan dukungan 24/7.',
         hero_btn_hosting: 'Lihat Pricelist',
         hero_btn_automation: 'Automation',
+        home_title: 'Tentang Curzy Cloud',
+        home_desc: 'Curzy Cloud beroperasi sebagai penyedia layanan infrastruktur Cloud dan Game Server Hosting yang mengutamakan performa, stabilitas, dan pelayanan kepada pelanggan. Kami menyediakan berbagai layanan mulai dari server VPS, Game Hosting, hingga script Automation bot.',
+        home_trust_title: 'Terpercaya Sejak Awal Beroperasi',
+        home_trust_desc: 'Telah melayani lebih dari 150+ Transaksi yang berhasil dan terus berkembang setiap harinya.',
         stat_uptime: 'Uptime',
         stat_users: 'Pengguna',
         stat_support: 'Support',
@@ -92,6 +96,10 @@ const TRANSLATIONS = {
         hero_subtitle: 'The best game server hosting solution with high performance, affordable prices, and 24/7 support.',
         hero_btn_hosting: 'View Pricelist',
         hero_btn_automation: 'Automation',
+        home_title: 'About Curzy Cloud',
+        home_desc: 'Curzy Cloud operates as a provider of Cloud infrastructure and Game Server Hosting services that prioritize performance, stability, and customer service. We provide various services ranging from VPS servers, Game Hosting, to Automation bot scripts.',
+        home_trust_title: 'Trusted Since Inception',
+        home_trust_desc: 'Have served more than 150+ successful transactions and continue to grow every day.',
         stat_uptime: 'Uptime',
         stat_users: 'Users',
         stat_support: 'Support',
@@ -158,6 +166,9 @@ const $$ = (sel) => document.querySelectorAll(sel);
 
 // ===================== INIT =====================
 document.addEventListener('DOMContentLoaded', () => {
+    setVh(); // Initial
+    window.addEventListener('resize', setVh); // On resize/scroll
+
     createParticles();
     initScrollReveal();
     renderPricingCards();
@@ -166,6 +177,12 @@ document.addEventListener('DOMContentLoaded', () => {
     initLanguageToggle();
     animateCounters();
 });
+
+// ===================== VIEWPORT HEIGHT FIX =====================
+function setVh() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty('--vh', `${vh}px`);
+}
 
 // ===================== PARTICLES =====================
 function createParticles() {
@@ -369,6 +386,7 @@ function bindCartButtons() {
 }
 
 function openCart() {
+    setVh(); // Recalculate true viewport height exactly when opened
     $('#cartOverlay').classList.add('open');
     $('#cartSidebar').classList.add('open');
     document.body.style.overflow = 'hidden';
